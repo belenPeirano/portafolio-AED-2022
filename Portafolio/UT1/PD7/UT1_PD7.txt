@@ -1,0 +1,14 @@
+** Ejercicio 1 **
+
+Porque las comparaciones entre String en Java se hacen con .equals(), no con ==
+
+versión correcta:
+String s = "1";
+while (s.equals("1000")) {
+s += "0";
+}
+
+** Ejercicio 2 **
+
+1) Como resultado del if se ejecuta la secuencia: "System.out.println( "True" );" ya que ambas variables tienen la misma referencia.
+2) Como resultado del if se ejecuta la secuencia: "System.out.println( "False" );" es el caso contrario al anterior.

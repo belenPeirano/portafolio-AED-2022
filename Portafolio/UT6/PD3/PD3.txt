@@ -1,0 +1,58 @@
+** EJERCICIO 1 **
+
+public void eliminarNulos(HashMap hashMap) {
+        hashMap.removeIf(value -> value == null);
+}
+
+** EJERCICIO 2 **
+
+public Map<String.String> invertir(Map<String.String> hashMap) throws Exception {
+        Map<String.String> hashMapInvertido = new Map<String.String>();
+        
+        //Se crea un HashSet con los valores del hashmap (como el Hashset no acepta valores duplicados, si existen duplicados en el hshmap, sus 			tamaños serán distintos)
+        HashSet hashSet = new HashSet(hashMap.values());
+        if (hashMap.size() != hashSet.size()) {
+            throw new Exception("Existen valores duplicados.");
+        }
+        
+        for (Object item : hashMap) {
+            hashMapInvertido.put(item.getValue(), item.getKey());
+        }
+        return hashMapInvertido;
+}
+
+** EJERICICO 3 **
+
+public static void imprimirOrdenado(String cadenas) {
+        String[] vectorCadenas = cadenas.split(" ");
+        TreeMap<Integer, LinkedList<String>> mapaResultado = new TreeMap<>();
+        for (String s : vectorCadenas) {
+            // Si ya existe una cadena de ese largo, se agrega la cadena al final de la lista correspondiente, y luego se ordena en orden 					lexicorgrafico
+            if (mapaResultado.containsKey(s.length())) {
+                mapaResultado.get(s.length()).add(s);
+                Collections.sort(mapaResultado.get(s.length()));
+                
+            // Sino se agrega un elemento al mapa y luego se agrega la cadena a la lista de dicho elemento
+           } else {
+                mapaResultado.put(s.length(), new LinkedList<String>());
+                mapaResultado.get(s.length()).add(s);
+            }
+        }
+        System.out.println(mapaResultado.values());
+}
+
+** EJERCICIO 4 **
+
+public static String[] leerArchivoAleatorio(List<String> texto, int cantidad) {
+        if (cantidad > texto.size()){
+            System.out.println("La cantidad de lineas a imprimir no puede superar la cantidad de lineas del archivo");
+            return null;
+        }
+        String[] resultado = new String[cantidad];
+        for (int i = 0; i < cantidad; i++) {
+            Random r = new Random();
+            int pos = r.nextInt(texto.size() - 1);
+            resultado[i] = texto.get(pos);
+        }
+        return resultado;
+}

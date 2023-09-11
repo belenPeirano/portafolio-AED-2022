@@ -1,0 +1,28 @@
+**Ejercicio 1**
+
+x es una variable de clase e y una variable de instancia.
+
+a.y = 5
+b.y = 6
+a.x = 1
+b.x = 2
+IdentifyMyParts.x = 2 			//Porque x es una variable estatica
+
+
+**Ejercicio 2**
+
+1) La variable MyRect no está inicializada.
+2) public class SomethingIsWrong {
+	public static void main(String[] args) {
+		Rectangle myRect = new Rectangle();
+		myRect.width = 40;
+		myRect.height = 50;
+		System.out.println("myRect's area is " + myRect.area());
+	}
+}
+
+
+**Ejercicio 3**
+
+1) Ambos objetos tienen una referencia cada uno. Ninguno es candidato al garbage collector ya que tienen referencias.
+2) Se le asgina null a la variable y así la misma es candidata para ser eliminada por el garbage collector.

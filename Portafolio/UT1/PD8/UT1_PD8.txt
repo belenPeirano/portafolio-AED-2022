@@ -1,0 +1,11 @@
+public class Marcapasos {
+    short presionSanguinea;                  //2 bytes
+    short frecuenciaCardiaca;               // 2 bytes
+    short azucarEnSangre;                   // 2 bytes
+    long fuerza;                            // 8 bytes
+    float tiempoEntreLatidos;               // 4 bytes
+    double bateria;                         // 8 bytes
+    char[] codigoFabricante = new char[8]; // 16 bytes
+} 
+
+En total ocuparía 42 bytes de memoria

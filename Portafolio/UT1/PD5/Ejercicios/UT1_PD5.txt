@@ -1,0 +1,68 @@
+** Ejercicio 1 **
+
+1) Un ejemplo de uso sería por ejemplo un método que registre qué libros de cierta biblioteca se vendieron, se crea un Enum con todos los libros.
+2) En vez de hacer un if preguntando si en char es igual a cada vocal (que fue lo que hicimos en clase) se podrían guardar las vocales en un Enum y luego solo consultar si el char pertenece a ese enum.
+
+** Ejercicio 4 **
+1)
+a + b = 79.5
+a - b = -52.699997
+a * b = 885.7399
+a / b = 0.20272315
+a % b = 13.4
+2) ...
+if (args.length == 3 && Integer.valueOf(args[0]) > 0 && Integer.valueOf(args[1]) > 0) {
+            // convert strings to numbers
+            int a = Integer.valueOf(args[0]);
+            int b = Integer.valueOf(args[0]);
+...
+
+** Ejercicio 5**
+
+1) La salida obtenida es:
+3 digits before decimal point.
+2 digits after decimal point.
+2) El primer dato imprime los digitos que están adelante del "." y el segundo los que están después. Lo primero lo hace con el indexOf, devolviendo la posición del "." (esa es la cantidad de dígitos), y después para el segundo resta la posición inicial al largo del número.
+
+** Ejercicio 6 **
+
+- Substring: Retorna un nuevo string que es un substring del string original.
+- split: Separa, en base a un caracter que se le pasa por parámetro, un string en x partes, guardandolas en un array.
+- trim: Devuelve una nueva secuencia de caracteres sin espacios.
+- toLowerCase: Devuelve una copia del string en minúscula.
+- toUpperCase: Devuelve una copia del string en mayúscula.
+- indexOf: Devuelve el índice de un caracter específico.
+- lastIndexOf: Devuelve el índice de la última aparición de un caracter específico.
+- contains: Devuelve true si el string contiene cierto caracter.
+- replace(oldChar, newChar): Retorna un string nuevo reemplazando todas las apariciones de oldChar por newChar.
+- replaceAll: Idem anterior pero con Strings
+
+** Ejercicio 7 **
+
+- setLength: Settea el largo de una secuencia de caracteres.
+- ensureCapacity: Garantiza que la capacidad sea al menos igual al mínimo especificado.
+- append: Agrega el argumento al StringBuilder.
+- insert: Inserta el segundo argumento al StringBuilder. El primer argumento es un entero que indica el índice antes del cual se inserta.
+- delete: Borra las secuencia de caracteres entre los indices que se pasan por parámetros.
+
+** Ejercicio 8 **
+
+42 caracteres
+
+** Ejercicio 9 ** 
+
+a) 32.
+b) e.
+c) hannah.charAt(15)
+
+** Ejercicio 10 **
+
+3 caracteres. Devuelve "car"
+
+** Ejercicio 11 **
+
+1. eola
+2. e2la
+3. e 2la
+4. e 2laste
+5. e 2am laste
